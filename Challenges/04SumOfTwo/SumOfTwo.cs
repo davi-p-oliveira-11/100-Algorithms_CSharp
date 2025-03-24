@@ -1,3 +1,11 @@
+/* 
+4) Develop an algorithm that reads two integers and displays the sum between them.  
+Example:  
+Enter a value: 8  
+Enter another value: 5  
+The sum of 8 and 5 is 13.
+*/
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
