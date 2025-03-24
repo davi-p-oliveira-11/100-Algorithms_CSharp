@@ -20,7 +20,7 @@ public class HelloUser
    public static void Algorithm()
    {
       Console.WriteLine("What is your name ?");
-      string userName = Console.ReadLine();
+      string? userName = Console.ReadLine();
 
       Console.WriteLine($"Hello {userName} nice to meet you ! ");
    }
