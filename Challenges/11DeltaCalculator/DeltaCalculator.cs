@@ -12,6 +12,32 @@ namespace _100_Algorithms_Csharp.Challenges_11DeltaCalculator
 {
     public class DeltaCalculator
     {
-        
+        public static void Main(string[] args)
+        {
+            Algorithm();
+            PressEnterToExit(); 
+        }
+
+        public static void Algorithm()
+        {
+           Console.WriteLine("Enter the value of A: ");
+           double valueOfA = double.Parse(Console.ReadLine()!);
+
+           Console.WriteLine("Enter the value of B: ");
+           double valueOfB = double.Parse(Console.ReadLine()!);
+
+           Console.WriteLine("Enter the value of C: ");
+           double valueOfC = double.Parse(Console.ReadLine()!);
+
+           double delta = valueOfB * valueOfB - 4 * (valueOfA * valueOfC);
+
+           Console.WriteLine($"The value of delta is equal to: {delta}"); 
+        }
+
+        public static void PressEnterToExit() 
+        {
+            Console.WriteLine("Press any key to continue...");
+            Console.ReadKey();
+        }
     }
 }
