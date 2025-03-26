@@ -20,7 +20,7 @@ namespace _100_Algorithms_Csharp.Challenges_08MeasureConverter
 {
     public class MeasureConverter
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             Algorithm();
             PressEnterToExit();
