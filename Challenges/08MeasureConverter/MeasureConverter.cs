@@ -1,5 +1,5 @@
 /* 
-9) Develop a program that reads a distance in meters and displays the equivalent values in other units.
+8) Develop a program that reads a distance in meters and displays the equivalent values in other units.
 Example:
 Enter a distance in meters: 185.72
 The distance of 185.72m corresponds to:
@@ -20,6 +20,38 @@ namespace _100_Algorithms_Csharp.Challenges_08MeasureConverter
 {
     public class MeasureConverter
     {
-        
+        static void Main(string[] args)
+        {
+            Algorithm();
+            PressEnterToExit();
+        }
+
+        public static void Algorithm()
+        {
+            Console.WriteLine("Type a distance in meters: ");
+            double meters = double.Parse(Console.ReadLine()!);
+
+            double kilometers = meters / 1000;
+            double hectometers = meters / 100;
+            double decameters = meters / 10;
+            double decimeters = meters * 10;
+            double centimeters = meters * 100;
+            double milimeters = meters * 1000;
+
+            Console.WriteLine($"The distance of {meters} corresponds to");
+            Console.WriteLine($"{kilometers}km");
+            Console.WriteLine($"{hectometers}hm");
+            Console.WriteLine($"{decameters}dam");
+            Console.WriteLine($"{decimeters}dm");
+            Console.WriteLine($"{centimeters}cm");
+            Console.WriteLine($"{milimeters}mm");
+        }
+
+         public static void PressEnterToExit() 
+        {
+            Console.WriteLine("Press any key to continue...");
+            Console.ReadKey();
+        }
+
     }
 }
