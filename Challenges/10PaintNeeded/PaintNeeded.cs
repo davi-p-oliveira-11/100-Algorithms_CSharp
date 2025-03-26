@@ -14,6 +14,31 @@ namespace _100_Algorithms_Csharp.Challenges_10PaintNeeded
 {
     public class PaintNeeded
     {
-        
-    }
+        public static void Main(string[] args)
+        {
+            Algorithm();
+            PressEnterToExit();
+        }
+
+        public static void Algorithm()
+        {
+            Console.WriteLine("Type the height of the wall in meters:");
+            double height = double.Parse(Console.ReadLine()!);
+
+            Console.WriteLine("Type the width of the wall in meters:");
+            double width = double.Parse(Console.ReadLine()!);
+
+            double area = width * height;
+            double paintNeeded = area * 0.5;
+
+            Console.WriteLine($"The area of the wall to be painted is equivalent to {area} m²");
+            Console.WriteLine($"and the amount of paint needed is equivalent to {paintNeeded} liters.");
+        }
+
+        public static void PressEnterToExit() 
+        {
+            Console.WriteLine("Press any key to continue...");
+            Console.ReadKey();
+        }
+    }     
 }
