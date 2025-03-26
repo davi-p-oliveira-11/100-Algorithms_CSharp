@@ -12,6 +12,26 @@ namespace _100_Algorithms_Csharp.Challenges_09CurrencyConverter
 {
     public class CurrencyConverter
     {
-        
+        public static void Main(string[] args)
+        {
+            Algorithm();
+            PressEnterToExit();
+        }
+
+        public static void Algorithm()
+        {
+            Console.WriteLine("How many BRL do you have in your pocket ?");
+            double brl = double.Parse(Console.ReadLine()!);
+
+            double dollarAmount = brl / 3.45;
+
+            Console.WriteLine($"You can buy a total of {dollarAmount} USD");
+        }
+
+        public static void PressEnterToExit() 
+        {
+            Console.WriteLine("Press any key to continue...");
+            Console.ReadKey();
+        }
     }
 }
