@@ -16,6 +16,30 @@ namespace _100_Algorithms_Csharp.Challenges_07DoubleThird
 {
     public class DoubleThird
     {
+        static void Main(string[] args)
+        {
+            Algorithm();
+            PressEnterToExit();
+        }
+
+        public static void Algorithm()
+        {
+            Console.WriteLine("Type a number: ");
+            double num = double.Parse(Console.ReadLine()!);
+
+            double twice = num * 2;
+            double thirdPart = num / 3;
+
+            Console.WriteLine($"The double of {num} is {twice}");
+            Console.WriteLine($"The third part of {num} is {thirdPart}");
+        }
+
+        public static void PressEnterToExit() 
+        {
+            Console.WriteLine("Press any key to continue...");
+            Console.ReadKey();
+        }
+
         
     }
 }
